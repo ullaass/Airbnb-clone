@@ -104,8 +104,7 @@ export default function AddHomeForm() {
                     {...register("country")}
                 >
                     <option value="">-- Select Country--</option>
-                    {countries.map((item)=><option value={item.value} key={item.value}>{item.label}
-                    <img src={`https://flagcdn.com/${item}.svg`} width={30} alt='/countryflag' /></option>)}
+                    {countries.map((item)=><option value={item.value} key={item.value}>{item.label}</option>)}
                 </select>
                 <span className='text-red-500'>{errors?.country?.message}</span>
             </div>
